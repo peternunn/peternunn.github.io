@@ -51,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 #mainNav {
-    background-color: $gray-darker;
+    background-color: $theme-primary;
+    border-bottom: 1px solid $gray-lighter; 
     .navbar-toggler {
         border: 0;
         color: white;
@@ -84,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
                     color: white;
                     &:hover,
                     &.active {
-                        color: $theme-primary;
+                        color: white;
+                        text-decoration: underline; 
                     }
                 }
             }
@@ -114,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
         &.navbar-shrink {
-            background-color: $gray-darker;
+            background-color: $theme-primary;
+            border-bottom: 1px solid $gray-lighter; 
             padding: 0;
             .navbar-brand {
                 padding: 12px 0;
@@ -137,6 +140,7 @@ header {
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
+        font-size: 2rem;
         .intro-lead-in {
             @include serif-font;
             font-style: italic;
@@ -286,7 +290,7 @@ section {
 // Contact Section
 
 section#contact {
-    background-color: $gray-darker;
+    background-color: $theme-primary;
     //background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -338,7 +342,7 @@ section#contact {
 // Footer
 
 footer {
-    padding: 25px 0;
+    padding:0;
     text-align: center;
     span.copyright {
         font-size: 90%;
