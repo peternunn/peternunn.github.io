@@ -140,43 +140,15 @@ header {
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
-        font-size: 2rem;
-        .intro-lead-in {
-            @include serif-font;
-            font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
-            margin-bottom: 25px;
-        }
-        .intro-heading {
-            @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 25px;
-        }
+        font-size: 1rem;
     }
 }
 
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 200px;
-            .intro-lead-in {
-                @include serif-font;
-                font-style: italic;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 25px;
-            }
-            .intro-heading {
-                @include heading-font;
-                font-weight: 700;
-                font-size: 75px;
-                line-height: 75px;
-                margin-bottom: 50px;
-            }
+            height:100vh;
+            font-size: 1.5em;
         }
     }
 }
@@ -188,7 +160,7 @@ section {
     h2.section-heading {
         font-size: 40px;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 150px;
     }
     h3.section-subheading {
         font-size: 16px;
@@ -204,13 +176,6 @@ section {
     section {
         padding: 150px 0;
     }
-}
-
-// Services Section
-
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
 }
 
 // Portfolio Section
@@ -297,66 +262,11 @@ section#contact {
     .section-heading {
         color: white;
     }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: $theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    :-ms-input-placeholder {  
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
-    }
-    .text-danger {
-        color: $theme-danger;
-    }
 }
 
 // Footer
 
 footer {
-    padding:0;
-    text-align: center;
-    span.copyright {
-        font-size: 90%;
-        line-height: 40px;
-        @include heading-font;
-        text-transform: none;
-    }
-    ul.quicklinks {
-        font-size: 90%;
-        margin-bottom: 0;
-        line-height: 40px;
-        @include heading-font;
-        text-transform: none;
-    }
 }
 
 // Social Buttons
