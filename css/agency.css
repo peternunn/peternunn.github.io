@@ -255,6 +255,8 @@ section#contact {
   background-color: #445f74;
   color: white;
   font-size: 1.5rem; }
+  section#contact a {
+    color: white; }
 
 .btn:focus,
 .btn:active,
