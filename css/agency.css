@@ -157,11 +157,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.25em; } }
 
 header {
+  background-image: url("../img/background.png");
   background-color: #445f74;
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: bottom right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -195,6 +196,17 @@ section {
 @media (min-width: 768px) {
   section {
     padding: 150px 0; } }
+
+#experience {
+  background-image: url("../img/background-02.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;

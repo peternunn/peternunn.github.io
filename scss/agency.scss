@@ -128,12 +128,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    // background-image: url('../img/header-background-01.png');//
+    background-image: url('../img/background.png');
     background-color: $theme-primary;
     height:100vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
+    background-position: bottom right;
     @include background-cover;
     text-align: center;
     color: white;
@@ -178,6 +178,14 @@ section {
     }
 }
 
+#experience {
+	background-image: url('../img/background-02.png');
+    height:100vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top right;
+    @include background-cover;
+}
 // Portfolio Section
 
 #portfolio {
