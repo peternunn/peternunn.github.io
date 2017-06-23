@@ -197,16 +197,26 @@ section {
   section {
     padding: 150px 0; } }
 
-#experience {
+#Experience {
+  position: relative; }
+
+.experience-back {
   background-image: url("../img/background-02.png");
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: top right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  position: absolute;
+  width: 100%;
+  margin-top: -100px; }
+
+@media (min-width: 768px) {
+  .experience-back {
+    margin-top: -150px; } }
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;
